@@ -1,0 +1,64 @@
+header {
+    background-color: $bgColor;
+    box-shadow: 0 0 18px 0px rgba(0,0,0,0.57);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    .head {
+        display: flex;
+        padding: 10px 15px 20px;
+        justify-content: space-between;
+        .box-logo {
+            margin-left: 30px;
+            &__img {
+                display: block;
+                max-height: 60px;
+                margin: 0 auto;
+            }
+            &__text {
+                text-transform: uppercase;
+                text-align: center;
+                display: block;
+                margin: 0 auto;
+                font-size: 14px;
+            }
+        }
+        .nav {
+            display: flex;
+            flex-basis: 70%;
+            .pagination {
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                width: 100%;
+                li {
+                    text-transform: uppercase;
+                    a {
+                        padding: 10px 20px;
+                        position: relative;
+                        &:before {
+                            content: "";
+                            width: 0;
+                            height: 0.1em;
+                            position: absolute;
+                            bottom: 0;
+                            left: 50%;
+                            background: $lightDark;
+                            transition: all 0.3s;
+                        }
+                        &:hover {
+                            color: $lightDark;
+                            &:before {
+                                width: 100%;
+                                left: 0;
+                                background: $lightDark;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
