@@ -152,7 +152,7 @@ button {
 }
 
 header {
-  background-color: #f6f6f6;
+  background-color: #D2E9FA;
   -webkit-box-shadow: 0 0 18px 0px rgba(0, 0, 0, 0.57);
           box-shadow: 0 0 18px 0px rgba(0, 0, 0, 0.57);
   position: fixed;
@@ -250,7 +250,7 @@ header .head .nav .pagination li a:hover:before {
 }
 
 .block-preview .slogan h3 {
-  color: #f6f6f6;
+  color: #D2E9FA;
 }
 
 .block-preview .content {
@@ -272,7 +272,7 @@ header .head .nav .pagination li a:hover:before {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #f6f6f6;
+  background-color: #D2E9FA;
   -ms-flex-preferred-size: 23%;
       flex-basis: 23%;
   margin: 1%;
@@ -379,7 +379,7 @@ header .head .nav .pagination li a:hover:before {
 }
 
 .photo-block .slogan h3 {
-  color: #f6f6f6;
+  color: #D2E9FA;
 }
 
 .photo-block_img {
@@ -418,7 +418,7 @@ header .head .nav .pagination li a:hover:before {
           flex-direction: column;
   -ms-flex-preferred-size: 28%;
       flex-basis: 28%;
-  background-color: #f6f6f6;
+  background-color: #D2E9FA;
   margin: 10px;
   border-radius: 15px;
   padding: 10px;
@@ -465,7 +465,7 @@ footer .footer {
 
 footer .footer p,
 footer .footer a {
-  color: #f6f6f6;
+  color: #D2E9FA;
 }
 
 footer .footer .block-socialNetworks,
@@ -498,7 +498,7 @@ footer .footer .block-socialNetworks ul li a.icon {
   text-align: center;
   width: 45px;
   height: 45px;
-  background-color: #f6f6f6;
+  background-color: #D2E9FA;
   color: #000;
   line-height: 46px;
   border-radius: 50px;
