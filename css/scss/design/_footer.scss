@@ -10,7 +10,7 @@ footer {
         p,
         a {
 
-            color: $bgColor;
+            color: $fontColor;
         }
 
         .block-socialNetworks,
@@ -34,7 +34,7 @@ footer {
                             text-align: center;
                             width: 45px;
                             height: 45px;
-                            background-color: $bgColor;
+                            background-color: $fontColor;
                             color: #000;
                             line-height: 46px;
                             border-radius: 50px;
