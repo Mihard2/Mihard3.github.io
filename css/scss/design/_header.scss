@@ -155,17 +155,13 @@ header {
                 align-items: center;
                 justify-content: center;
 
-                @include mq(xs) {}
-
                 li {
                     width: 100%;
                     text-align: center;
                     line-height: 64px;
 
                     @include mq(xs) {
-                        text-align: left;
-                        line-height: 32px;
-                        padding-left: 22px;
+                        line-height: 52px;
                     }
 
                     &.dropdown__menu-login {

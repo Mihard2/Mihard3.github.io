@@ -352,9 +352,7 @@ header .head .dropdown__menu li {
 
 @media (max-width: 576px) {
   header .head .dropdown__menu li {
-    text-align: left;
-    line-height: 32px;
-    padding-left: 22px;
+    line-height: 52px;
   }
 }
 
