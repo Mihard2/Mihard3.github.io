@@ -211,6 +211,12 @@ header .head .nav .pagination {
   width: 100%;
 }
 
+@media (max-width: 768px) {
+  header .head .nav .pagination {
+    display: none;
+  }
+}
+
 header .head .nav .pagination li {
   text-transform: uppercase;
 }
@@ -240,6 +246,163 @@ header .head .nav .pagination li a:hover:before {
   width: 100%;
   left: 0;
   background: #8d8d8d;
+}
+
+header .head .dropdown-link {
+  position: relative;
+  display: none;
+  z-index: 11;
+  width: 86px;
+  height: 86px;
+  margin-right: 4px;
+}
+
+@media (max-width: 768px) {
+  header .head .dropdown-link {
+    display: block;
+  }
+}
+
+header .head .dropdown-link span,
+header .head .dropdown-link span:before,
+header .head .dropdown-link span:after {
+  display: block;
+  border-radius: 2px;
+  height: 3px;
+  width: 30px;
+  background-color: #292F42;
+  position: absolute;
+  top: 70%;
+  left: 30%;
+  margin-top: -2px;
+  margin-left: -9px;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+header .head .dropdown-link span:before {
+  content: '';
+  margin-top: -11px;
+}
+
+header .head .dropdown-link span:after {
+  content: '';
+  margin-top: 8px;
+}
+
+header .head .dropdown-link_active span {
+  background-color: transparent;
+}
+
+header .head .dropdown-link_active span:before {
+  background-color: #f6f6f6;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+  margin-top: 0;
+}
+
+header .head .dropdown-link_active span:after {
+  background-color: #f6f6f6;
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+  margin-top: 0;
+}
+
+header .head .dropdown {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  header .head .dropdown {
+    display: block;
+    position: fixed;
+    top: -100vh;
+    left: 0;
+    background-color: #292F42;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+    -webkit-transition: all .4s;
+    transition: all .4s;
+  }
+}
+
+header .head .dropdown__menu {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .head .dropdown__menu li {
+  width: 100%;
+  text-align: center;
+  line-height: 64px;
+}
+
+@media (max-width: 576px) {
+  header .head .dropdown__menu li {
+    text-align: left;
+    line-height: 32px;
+    padding-left: 22px;
+  }
+}
+
+header .head .dropdown__menu li.dropdown__menu-login {
+  text-align: center;
+  margin-top: 30px;
+}
+
+@media (max-width: 576px) {
+  header .head .dropdown__menu li.dropdown__menu-login {
+    position: absolute;
+    bottom: 22px;
+    padding-left: 0;
+  }
+}
+
+header .head .dropdown__menu li.dropdown__menu-login a {
+  margin: auto;
+  background-color: #D2E9FA;
+  width: 344px;
+  height: 56px;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 56px;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+@media (max-width: 576px) {
+  header .head .dropdown__menu li.dropdown__menu-login a {
+    width: 276px;
+  }
+}
+
+header .head .dropdown__menu a {
+  display: block;
+  width: 100%;
+  font-size: 24px;
+  color: #f6f6f6;
+  font-weight: bold;
+}
+
+header .head .dropdown__menu a:active {
+  color: #D2E9FA;
+}
+
+header .head .dropdown_active {
+  top: 0;
 }
 
 .block-preview {
@@ -523,6 +686,15 @@ footer .footer {
           align-items: stretch;
 }
 
+@media (max-width: 576px) {
+  footer .footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
 footer .footer p,
 footer .footer a {
   color: #f6f6f6;
@@ -566,5 +738,11 @@ footer .footer .block-socialNetworks ul li a.icon {
 
 footer .footer .block-contacts p {
   margin-bottom: 25px;
+}
+
+@media (max-width: 576px) {
+  footer .footer .block-contacts {
+    margin-top: 35px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

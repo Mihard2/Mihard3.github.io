@@ -7,6 +7,9 @@ footer {
         display: flex;
         justify-content: space-around;
         align-items: stretch;
+        @include mq(xs){
+            flex-direction: column-reverse
+        }
         p,
         a {
 
@@ -47,6 +50,9 @@ footer {
            p {
                margin-bottom: 25px;
            }
+           @include mq(xs){
+            margin-top: 35px;
+        }
         }
 
     }

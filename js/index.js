@@ -1,3 +1,24 @@
+$(document).ready(function () {
+  var link = $('.dropdown-link'),
+      linkActive = $('.dropdown-link_active'),
+      menu = $('.dropdown'),
+      navLink = $('.dropdown ul li a'),
+      boxLogo = $('.box-logo');
+
+
+  link.click(function () {
+      link.toggleClass('dropdown-link_active');
+      menu.toggleClass('dropdown_active');
+      boxLogo.toggleClass('box-logo_active');
+  });
+
+  navLink.click(function () {
+      link.toggleClass('dropdown-link_active');
+      menu.toggleClass('dropdown_active');
+      boxLogo.toggleClass('box-logo_active');
+  });
+});
+
 $('.slider-for').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
