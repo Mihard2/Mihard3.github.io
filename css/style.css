@@ -109,7 +109,7 @@ button {
   margin: 0;
   font-size: 16px;
   color: #292F42;
-  font-family: sans-serif;
+  font-family: "Roboto Slab", sans-serif sans-serif;
 }
 
 .container {
@@ -261,6 +261,15 @@ header .head .nav .pagination li a:hover:before {
   display: flex;
 }
 
+@media (max-width: 992px) {
+  .block-preview .content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
 .block-preview .content__block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -279,6 +288,19 @@ header .head .nav .pagination li a:hover:before {
   padding: 15px 5px;
   height: 100%;
   border-radius: 13px;
+}
+
+@media (max-width: 1400px) {
+  .block-preview .content__block {
+    min-width: 210px;
+  }
+}
+
+@media (max-width: 768px) {
+  .block-preview .content__block {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
 }
 
 .block-preview .content__block .img-wrap {
@@ -321,6 +343,22 @@ header .head .nav .pagination li a:hover:before {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media (max-width: 992px) {
+  .service-block__info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .service-block__info {
+    margin: 20px 0;
+  }
 }
 
 .service-block__info-img {
@@ -371,6 +409,22 @@ header .head .nav .pagination li a:hover:before {
           flex-direction: row-reverse;
 }
 
+@media (max-width: 992px) {
+  .service-block__info-right {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .service-block__info-right {
+    margin: 20px 0;
+  }
+}
+
 .photo-block {
   background: url(../img/service-block/bg_img182.png);
   padding-top: 50px;
@@ -390,6 +444,12 @@ header .head .nav .pagination li a:hover:before {
 .photo-block_img img {
   width: 100%;
   border-radius: 30px;
+}
+
+@media (max-width: 576px) {
+  .photo-block_img img {
+    border-radius: 5px;
+  }
 }
 
 .price-block {

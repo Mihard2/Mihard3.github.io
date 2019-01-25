@@ -14,6 +14,11 @@
         position: relative;
         z-index: 9;
         display: flex;
+        @include mq(md) {
+            flex-wrap: wrap;
+            justify-content: space-around;
+
+        }
 
         &__block {
             display: flex;
@@ -25,6 +30,12 @@
             padding: 15px 5px;
             height: 100%;
             border-radius: 13px;
+            @include mq(lg) {
+                min-width: 210px;
+            }
+            @include mq(sm) {
+                flex-basis: 50%;
+            }
 
             .img-wrap {
                 width: 90%;
@@ -64,6 +75,13 @@
     &__info {
         position: relative;
         display: flex;
+        @include mq(md){
+            flex-direction: column;
+            margin: 30px;
+        }
+        @include mq(xs) {
+            margin: 20px 0;
+        }
 
         &-img {
             flex-basis: 50%;
@@ -82,6 +100,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            
 
             .title {
                 margin-bottom: 15px;
@@ -97,6 +116,13 @@
 
         &-right {
             flex-direction: row-reverse;
+            @include mq(md){
+                flex-direction: column;
+                margin: 30px;
+            }
+            @include mq(xs) {
+                margin: 20px 0;
+            }
         }
     }
 }
@@ -120,6 +146,9 @@
         img {
             width: 100%;
             border-radius: 30px;
+            @include mq(xs) {
+                border-radius: 5px;
+            }
         }
     }
 }

@@ -3,7 +3,15 @@ $('.slider-for').slick({
   slidesToScroll: 1,
   arrows: false,
   fade: true,
-  asNavFor: '.slider-nav'
+  asNavFor: '.slider-nav',
+  responsive: [  
+    {
+        breakpoint: 480,
+        settings: {
+            arrows: true,
+        }
+    }
+  ]
 });
 $('.slider-nav').slick({
   slidesToShow: 3,
@@ -12,7 +20,16 @@ $('.slider-nav').slick({
   arrows: false,
   dots: true,
   centerMode: true,
-  focusOnSelect: true
+  focusOnSelect: true,
+  responsive: [  
+    {
+        breakpoint: 480,
+        settings: {
+            dots: false,
+            slidesToShow: 2,
+        }
+    }
+  ]
 });
 
  
