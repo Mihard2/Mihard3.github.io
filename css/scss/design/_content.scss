@@ -165,15 +165,29 @@
         &-block {
             display: flex;
             flex-direction: column;
-            flex-basis: 28%;
+            flex-basis: 43%;
             background-color: $bgColor;
             margin: 10px;
             border-radius: 15px;
-            padding: 10px;
-
+            padding: 13px;
+            @include mq(sm){
+                flex-basis: 50%;
+                font-size: 14px;
+            }
+            @include mq(xs){
+                flex-basis: 80%;
+            }
             .subtitle {
                 text-transform: uppercase;
                 font-weight: 600;
+                margin-bottom: 20px;
+                @include mq(sm){
+                    margin-bottom: 13px;
+                }
+                &_signature {
+                    font-size: 12px;
+                    margin-bottom: 7px;
+                }
             }
 
             ul {
@@ -185,6 +199,16 @@
                     justify-content: space-between;
                     flex-wrap: nowrap;
                     overflow: hidden;
+                    span {
+                        display:inline-block;
+                        white-space: nowrap;
+                        &:nth-child(2) {
+                            flex: 1 0;
+                            border-bottom: 1px dotted #000;
+                            height: 10px;
+                            margin: 0 4px;
+                        }
+                    }
                 }
             }
         }
