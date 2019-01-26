@@ -182,12 +182,24 @@ header .head .box-logo__img {
   margin: 0 auto;
 }
 
+@media (max-width: 768px) {
+  header .head .box-logo__img {
+    max-height: 40px;
+  }
+}
+
 header .head .box-logo__text {
   text-transform: uppercase;
   text-align: center;
   display: block;
   margin: 0 auto;
   font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  header .head .box-logo__text {
+    font-size: 12px;
+  }
 }
 
 header .head .nav {
@@ -704,8 +716,8 @@ header .head .dropdown_active {
       -ms-flex: 1 0;
           flex: 1 0;
   border-bottom: 1px dotted #000;
-  height: 10px;
-  margin: 0 4px;
+  height: 13px;
+  margin: 0 7px;
 }
 
 footer {
@@ -731,6 +743,7 @@ footer .footer {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
+    padding-top: 30px;
   }
 }
 

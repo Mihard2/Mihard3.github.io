@@ -12,6 +12,7 @@ header {
         padding: 10px 15px 20px;
         justify-content: space-between;
 
+
         .box-logo {
             margin-left: 30px;
 
@@ -19,6 +20,9 @@ header {
                 display: block;
                 max-height: 60px;
                 margin: 0 auto;
+                @include mq(sm){
+                    max-height: 40px;
+                }
             }
 
             &__text {
@@ -27,6 +31,9 @@ header {
                 display: block;
                 margin: 0 auto;
                 font-size: 14px;
+                @include mq(sm) {
+                    font-size: 12px;
+                }
             }
         }
 
