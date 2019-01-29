@@ -180,12 +180,9 @@ header .head .wrapper-logo {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   margin-left: 30px;
 }
 
@@ -222,6 +219,12 @@ header .head .wrapper-logo .box-logo__text {
   header .head .wrapper-logo .box-logo__text {
     font-size: 12px;
   }
+}
+
+header .head .wrapper-logo .tel {
+  font-size: 20px;
+  font-weight: 700;
+  margin-right: 0;
 }
 
 header .head .nav {
@@ -808,11 +811,30 @@ footer .footer .block-socialNetworks ul li a.icon {
   color: #000;
   line-height: 46px;
   border-radius: 50px;
+  font-size: 23px;
+}
+
+footer .footer .block-socialNetworks ul li a.icon:hover {
+  padding: 5px;
+  margin: -5px;
+  padding: 5px;
+}
+
+footer .footer .block-socialNetworks ul li a.icon_vk:hover {
+  color: #597da3;
+}
+
+footer .footer .block-socialNetworks ul li a.icon_instagram:hover {
+  color: #bc2a8d;
 }
 
 footer .footer .block-contacts {
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+footer .footer .block-contacts a:hover {
+  color: #D2E9FA;
 }
 
 @media (max-width: 576px) {

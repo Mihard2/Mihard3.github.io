@@ -42,6 +42,22 @@ footer {
                             color: #000;
                             line-height: 46px;
                             border-radius: 50px;
+                            font-size: 23px;
+                            &:hover {
+                                padding: 5px;
+                                margin: -5px;
+                                padding: 5px;
+                            }
+                            &_vk {
+                                &:hover {
+                                    color: #597da3;
+                                }
+                            }
+                            &_instagram {
+                                &:hover {
+                                    color: #bc2a8d;
+                                }
+                            }
                         }
                     }
                 }
@@ -49,6 +65,11 @@ footer {
         }
         .block-contacts {
            justify-content: space-around;
+           a {
+               &:hover {
+                   color: $bgColor;
+               }
+           }
            @include mq(xs){
             margin-top: 35px;
         }

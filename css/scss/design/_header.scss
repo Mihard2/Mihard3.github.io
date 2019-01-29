@@ -16,8 +16,7 @@ header {
         .wrapper-logo {
             display: flex;
             flex-direction: column;
-            align-items: center;
-            justify-content: center;
+            align-items: flex-end;
             margin-left: 30px;
             .box-logo {
                 display: flex;
@@ -42,6 +41,11 @@ header {
                         font-size: 12px;
                     }
                 }
+            }
+            .tel {
+                font-size: 20px;
+                font-weight: 700;
+                margin-right: 0;
             }
         }
 
