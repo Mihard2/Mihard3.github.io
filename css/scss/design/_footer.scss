@@ -48,9 +48,7 @@ footer {
             }
         }
         .block-contacts {
-           p {
-               margin-bottom: 25px;
-           }
+           justify-content: space-around;
            @include mq(xs){
             margin-top: 35px;
         }
